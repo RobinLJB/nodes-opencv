@@ -1,0 +1,18 @@
+{
+  "name": "nodes-opencv",
+  "version": "1.0.0",
+  "description": "nodejs openCV demo",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron --debug=5858 index.dev.js",
+    "build": "electron-packager ./ --all --out ./build",
+    "packager-darwin": "electron-packager ./ --platform=darwin --arch=x64  --out=./dist --asar  --ignore=\"(dist|src|docs|dev|.gitignore|LICENSE|README.md|webpack.config*|node_modules)\""
+  },
+  "author": "Robin",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^2.0.0",
+    "electron-packager": "^12.1.0"
+  }
+}
